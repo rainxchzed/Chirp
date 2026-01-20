@@ -60,12 +60,11 @@ kotlin {
             dependencies {
                 implementation(libs.kotlin.stdlib)
                 // Add KMP dependencies here
-            }
-        }
 
-        commonTest {
-            dependencies {
-                implementation(libs.kotlin.test)
+                implementation(projects.core.domain)
+                implementation(projects.core.designsystem)
+                implementation(projects.feature.chat.domain)
+
             }
         }
 
@@ -74,12 +73,6 @@ kotlin {
                 // Add Android-specific dependencies here. Note that this source set depends on
                 // commonMain by default and will correctly pull the Android artifacts of any KMP
                 // dependencies declared in commonMain.
-            }
-        }
-
-        getByName("androidDeviceTest") {
-            dependencies {
-                
             }
         }
 

@@ -46,7 +46,7 @@ coil-network = "3.3.0"
 moko = "0.19.1"
 buildkonfig = "0.17.1"
 
-projectApplicationId = "com.plcoding.chirp"
+projectApplicationId = "zed.rainxch.chirp"
 projectVersionName = "1.0"
 projectMinSdkVersion = "26"
 projectTargetSdkVersion = "36"
@@ -151,6 +151,8 @@ jetbrains-savedstate = { module = "org.jetbrains.androidx.savedstate:savedstate"
 jetbrains-bundle = { module = "org.jetbrains.androidx.core:core-bundle", version.ref = "jetbrains-core-bundle" }
 
 [plugins]
+
+convention-android-application = { id = "zed.rainxch.convention.android.application", version="unspecified" }
 
 # Android
 android-application = { id = "com.android.application", version.ref = "agp" }

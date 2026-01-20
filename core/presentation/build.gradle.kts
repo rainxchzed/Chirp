@@ -59,13 +59,8 @@ kotlin {
         commonMain {
             dependencies {
                 implementation(libs.kotlin.stdlib)
-                // Add KMP dependencies here
-            }
-        }
 
-        commonTest {
-            dependencies {
-                implementation(libs.kotlin.test)
+                implementation(projects.core.domain)
             }
         }
 
@@ -75,13 +70,7 @@ kotlin {
                 // commonMain by default and will correctly pull the Android artifacts of any KMP
                 // dependencies declared in commonMain.
             }
-        }
-
-        getByName("androidDeviceTest") {
-            dependencies {
-                
-            }
-        }
+        } 
 
         iosMain {
             dependencies {
