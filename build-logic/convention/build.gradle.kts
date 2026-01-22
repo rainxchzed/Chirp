@@ -45,5 +45,9 @@ gradlePlugin {
             id = "zed.rainxch.convention.cmp.application"
             implementationClass = "CmpApplicationConventionPlugin"
         }
+        register("kmpLibrary") {
+            id = "zed.rainxch.convention.kmp.library"
+            implementationClass = "KmpLibraryConventionPlugin"
+        }
     }
 }

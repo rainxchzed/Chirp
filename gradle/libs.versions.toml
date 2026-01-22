@@ -155,6 +155,7 @@ jetbrains-bundle = { module = "org.jetbrains.androidx.core:core-bundle", version
 convention-android-application = { id = "zed.rainxch.convention.android.application", version="unspecified" }
 convention-android-application-compose = { id = "zed.rainxch.convention.android.application.compose", version="unspecified" }
 convention-cmp-application = { id = "zed.rainxch.convention.cmp.application", version="unspecified" }
+convention-kmp-library = { id = "zed.rainxch.convention.kmp.library", version="unspecified" }
 
 # Android
 android-application = { id = "com.android.application", version.ref = "agp" }
