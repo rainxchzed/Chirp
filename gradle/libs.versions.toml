@@ -168,6 +168,8 @@ convention-cmp-application = { id = "zed.rainxch.convention.cmp.application", ve
 convention-kmp-library = { id = "zed.rainxch.convention.kmp.library", version="unspecified" }
 convention-cmp-library = { id = "zed.rainxch.convention.cmp.library", version="unspecified" }
 convention-cmp-feature = { id = "zed.rainxch.convention.cmp.feature", version="unspecified" }
+convention-buildkonfig = { id = "zed.rainxch.convention.buildkonfig", version="unspecified" }
+convention-room = { id = "zed.rainxch.convention.room", version="unspecified" }
 
 # Android
 android-application = { id = "com.android.application", version.ref = "agp" }
