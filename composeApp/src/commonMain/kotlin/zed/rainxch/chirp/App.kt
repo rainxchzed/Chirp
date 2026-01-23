@@ -47,17 +47,3 @@ fun App() {
         }
     }
 }
-
-fun main() {
-    val dataClass = DataClass(example = "data_class")
-    val `object` = Object
-    val dataObject = DataObject
-
-    println(dataClass.example)
-    println(`object`.example)
-    println(dataObject.example)
-
-    println(dataClass)
-    println(`object`)
-    println(dataObject)
-}

@@ -7,15 +7,3 @@ class Greeting {
         return "Hello, ${platform.name}!"
     }
 }
-
-data class DataClass(
-    val example: String
-)
-
-object Object {
-    var example = "Object"
-}
-
-data object DataObject {
-    var example = "DataObject"
-}
