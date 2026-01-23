@@ -11,7 +11,10 @@ dependencies {
     compileOnly(libs.android.tools.common)
     compileOnly(libs.kotlin.gradlePlugin)
     compileOnly(libs.compose.gradlePlugin)
- }
+
+    implementation(libs.buildkonfig.gradlePlugin)
+    implementation(libs.buildkonfig.compiler)
+}
 
 java {
     sourceCompatibility = JavaVersion.VERSION_17
@@ -48,6 +51,14 @@ gradlePlugin {
         register("kmpLibrary") {
             id = "zed.rainxch.convention.kmp.library"
             implementationClass = "KmpLibraryConventionPlugin"
+        }
+        register("cmpLibrary") {
+            id = "zed.rainxch.convention.cmp.library"
+            implementationClass = "CmpLibraryConventionPlugin"
+        }
+        register("cmpFeature") {
+            id = "zed.rainxch.convention.cmp.feature"
+            implementationClass = "CmpFeatureConventionPlugin"
         }
     }
 }
